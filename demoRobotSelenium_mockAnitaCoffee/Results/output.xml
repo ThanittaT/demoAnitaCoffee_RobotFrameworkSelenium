@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220512 23:01:32.118" rpa="false" schemaversion="3">
+<suite id="s1" name="Register" source="C:\development\robot-script\demoRobotSelenium_mockAnitaCoffee\tests\Register.robot">
+<test id="s1-t1" name="SCENARIO#1: Test System Register" line="18">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${OPEN_BROWSER}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220512 23:01:32.300" level="INFO">Opening browser 'chrome' to base url 'file:///C:/development/robot-script/demoRobotSelenium_mockAnitaCoffee/Resources/mockupDataTest/mock_webpage_Register.html'.</msg>
+<status status="PASS" starttime="20220512 23:01:32.300" endtime="20220512 23:01:33.702"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220512 23:01:33.704" endtime="20220512 23:01:33.839"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>mockup_Website for Automation Test- ROBOTFRAMEWORK SeleniumLibrary!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220512 23:01:33.841" endtime="20220512 23:01:33.859"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>LOG#1: --&gt; This is log for 1.1 Start filling username&amp;password</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220512 23:01:33.860" level="INFO">LOG#1: --&gt; This is log for 1.1 Start filling username&amp;password</msg>
+<status status="PASS" starttime="20220512 23:01:33.860" endtime="20220512 23:01:33.860"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=reg_username</arg>
+<arg>Nonoka_Japan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:33.861" level="INFO">Typing text 'Nonoka_Japan' into text field 'id=reg_username'.</msg>
+<status status="PASS" starttime="20220512 23:01:33.861" endtime="20220512 23:01:33.946"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div/input[contains(@v,'reg_Password')]</arg>
+<arg>P@ssw0rd</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:33.947" level="INFO">Typing text 'P@ssw0rd' into text field 'xpath=//div/input[contains(@v,'reg_Password')]'.</msg>
+<status status="PASS" starttime="20220512 23:01:33.947" endtime="20220512 23:01:34.013"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>LOG#2: --&gt;This is log for 1.2 Start filling Personal Information</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220512 23:01:34.013" level="INFO">LOG#2: --&gt;This is log for 1.2 Start filling Personal Information</msg>
+<status status="PASS" starttime="20220512 23:01:34.013" endtime="20220512 23:01:34.013"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[label='Email : ']//input</arg>
+<arg>nonoka.jp@demoEmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:34.014" level="INFO">Typing text 'nonoka.jp@demoEmail.com' into text field 'xpath=//div[label='Email : ']//input'.</msg>
+<status status="PASS" starttime="20220512 23:01:34.014" endtime="20220512 23:01:34.081"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@class='_registerForm' and @id='4']//input</arg>
+<arg>0991234567</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:34.081" level="INFO">Typing text '0991234567' into text field 'xpath=//div[@class='_registerForm' and @id='4']//input'.</msg>
+<status status="PASS" starttime="20220512 23:01:34.081" endtime="20220512 23:01:34.148"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[span[1]]//input</arg>
+<arg>testNONOKA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:34.149" level="INFO">Typing text 'testNONOKA' into text field 'xpath=//div[span[1]]//input'.</msg>
+<status status="PASS" starttime="20220512 23:01:34.148" endtime="20220512 23:01:34.212"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div//span[contains(@i,'lName')]/input</arg>
+<arg>testJAPAN</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:34.213" level="INFO">Typing text 'testJAPAN' into text field 'xpath=//div//span[contains(@i,'lName')]/input'.</msg>
+<status status="PASS" starttime="20220512 23:01:34.212" endtime="20220512 23:01:34.288"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>reg_Gender2</arg>
+<arg>Female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220512 23:01:34.289" level="INFO">Selecting 'Female' from radio button 'reg_Gender2'.</msg>
+<status status="PASS" starttime="20220512 23:01:34.289" endtime="20220512 23:01:34.331"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath=//section//fieldset[1]</arg>
+<arg>C:/development/robot-script/demoRobotSelenium_mockAnitaCoffee/Results/SCREENSHOT_RESULT/1. Personal_Information.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20220512 23:01:34.415" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/SCREENSHOT_RESULT/1.%20Personal_Information.png"&gt;&lt;img src="../Results/SCREENSHOT_RESULT/1.%20Personal_Information.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220512 23:01:34.332" endtime="20220512 23:01:34.415"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220512 23:01:37.420" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220512 23:01:34.415" endtime="20220512 23:01:37.420"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>LOG#3: --&gt; This is log for Filling Address information</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220512 23:01:37.420" level="INFO">LOG#3: --&gt; This is log for Filling Address information</msg>
+<status status="PASS" starttime="20220512 23:01:37.420" endtime="20220512 23:01:37.420"/>
+</kw>
+<kw name="Filling Address Form" library="AddressInfo">
+<kw name="Log" library="BuiltIn">
+<arg>2.1 Fill address detail</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220512 23:01:37.421" level="INFO">2.1 Fill address detail</msg>
+<status status="PASS" starttime="20220512 23:01:37.421" endtime="20220512 23:01:37.421"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@class='_registerForm' and @id=8]//input</arg>
+<arg>No.1 Sathorn City Tower-Building,Block#2,Floor-8th</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:37.421" level="INFO">Typing text 'No.1 Sathorn City Tower-Building,Block#2,Floor-8th' into text field 'xpath=//div[@class='_registerForm' and @id=8]//input'.</msg>
+<status status="PASS" starttime="20220512 23:01:37.421" endtime="20220512 23:01:37.484"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>2.2 Log for "Select DropDown-list"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220512 23:01:37.484" level="INFO">2.2 Log for "Select DropDown-list"</msg>
+<status status="PASS" starttime="20220512 23:01:37.484" endtime="20220512 23:01:37.484"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>subLocation</arg>
+<arg>Bangkok</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220512 23:01:37.484" level="INFO">Selecting options from selection list 'subLocation' by value Bangkok.</msg>
+<status status="PASS" starttime="20220512 23:01:37.484" endtime="20220512 23:01:37.506"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=reg_Zipcode</arg>
+<arg>10120</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:37.506" level="INFO">Typing text '10120' into text field 'id=reg_Zipcode'.</msg>
+<status status="PASS" starttime="20220512 23:01:37.506" endtime="20220512 23:01:37.551"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div//input[@id='reg_PointOfInterest']</arg>
+<arg>Opposite the StandardCharter's Bank,Chongnosi-Intersection</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:37.552" level="INFO">Typing text 'Opposite the StandardCharter's Bank,Chongnosi-Intersection' into text field 'xpath=//div//input[@id='reg_PointOfInterest']'.</msg>
+<status status="PASS" starttime="20220512 23:01:37.552" endtime="20220512 23:01:37.618"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/development/robot-script/demoRobotSelenium_mockAnitaCoffee/Results/SCREENSHOT_RESULT/2. AddressInfo-resource.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220512 23:01:37.716" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/SCREENSHOT_RESULT/2.%20AddressInfo-resource.png"&gt;&lt;img src="../Results/SCREENSHOT_RESULT/2.%20AddressInfo-resource.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220512 23:01:37.618" endtime="20220512 23:01:37.716"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220512 23:01:40.719" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220512 23:01:37.716" endtime="20220512 23:01:40.719"/>
+</kw>
+<status status="PASS" starttime="20220512 23:01:37.421" endtime="20220512 23:01:40.719"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>LOG#4: --&gt; This is log for Questionaire after filling personal data</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220512 23:01:40.720" level="INFO">LOG#4: --&gt; This is log for Questionaire after filling personal data</msg>
+<status status="PASS" starttime="20220512 23:01:40.719" endtime="20220512 23:01:40.720"/>
+</kw>
+<kw name="SELECT_Checkbox_FavMenu">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>reg_FavoriteMenu1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:40.721" level="INFO">Selecting checkbox 'reg_FavoriteMenu1'.</msg>
+<status status="PASS" starttime="20220512 23:01:40.721" endtime="20220512 23:01:40.757"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath=//div//input[@id='_tellMenu3']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:40.757" level="INFO">Selecting checkbox 'xpath=//div//input[@id='_tellMenu3']'.</msg>
+<status status="PASS" starttime="20220512 23:01:40.757" endtime="20220512 23:01:40.803"/>
+</kw>
+<status status="PASS" starttime="20220512 23:01:40.720" endtime="20220512 23:01:40.803"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@m='menu' and @l='favBev' ]//input</arg>
+<arg>Iced-Mocha</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:40.804" level="INFO">Typing text 'Iced-Mocha' into text field 'xpath=//div[@m='menu' and @l='favBev' ]//input'.</msg>
+<status status="PASS" starttime="20220512 23:01:40.803" endtime="20220512 23:01:40.855"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@m='menu' and @n='favSnack' ]//input</arg>
+<arg>Strawberry Pancakes</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:40.855" level="INFO">Typing text 'Strawberry Pancakes' into text field 'xpath=//div[@m='menu' and @n='favSnack' ]//input'.</msg>
+<status status="PASS" starttime="20220512 23:01:40.855" endtime="20220512 23:01:40.906"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath=//div[@class='_registerForm' and @id='12']</arg>
+<arg>C:/development/robot-script/demoRobotSelenium_mockAnitaCoffee/Results/SCREENSHOT_RESULT/3. Questionaire-FavoriteMenu.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20220512 23:01:40.963" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/SCREENSHOT_RESULT/3.%20Questionaire-FavoriteMenu.png"&gt;&lt;img src="../Results/SCREENSHOT_RESULT/3.%20Questionaire-FavoriteMenu.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220512 23:01:40.906" endtime="20220512 23:01:40.963"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>LOG#5: --&gt;Completed filling Register's Form and prepare to submit-button</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220512 23:01:40.964" level="INFO">LOG#5: --&gt;Completed filling Register's Form and prepare to submit-button</msg>
+<status status="PASS" starttime="20220512 23:01:40.963" endtime="20220512 23:01:40.964"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//div[span[@b='reg_btnSubmit']]//button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220512 23:01:40.964" level="INFO">Clicking button 'xpath=//div[span[@b='reg_btnSubmit']]//button'.</msg>
+<status status="PASS" starttime="20220512 23:01:40.964" endtime="20220512 23:01:41.000"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220512 23:01:43.008" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220512 23:01:41.001" endtime="20220512 23:01:43.008"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>Success Register! Thank you for joining Anita Coffee Shop!</arg>
+<arg>action=ACCEPT</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20220512 23:01:43.010" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20220512 23:01:43.009" endtime="20220512 23:01:43.017"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220512 23:01:45.035" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220512 23:01:43.019" endtime="20220512 23:01:45.035"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/development/robot-script/demoRobotSelenium_mockAnitaCoffee/Results/SCREENSHOT_RESULT/4. CaptureScreen-once completed Form.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220512 23:01:45.136" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/SCREENSHOT_RESULT/4.%20CaptureScreen-once%20completed%20Form.png"&gt;&lt;img src="../Results/SCREENSHOT_RESULT/4.%20CaptureScreen-once%20completed%20Form.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220512 23:01:45.036" endtime="20220512 23:01:45.136"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220512 23:01:47.141" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220512 23:01:45.137" endtime="20220512 23:01:47.141"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220512 23:01:47.142" endtime="20220512 23:01:49.239"/>
+</kw>
+<doc>1.Filling Personal Information Form</doc>
+<tag>Section#1:Personal Data-Register</tag>
+<status status="PASS" starttime="20220512 23:01:32.299" endtime="20220512 23:01:49.240"/>
+</test>
+<doc>mockup Anita Coffee Shop's website</doc>
+<status status="PASS" starttime="20220512 23:01:32.119" endtime="20220512 23:01:49.245"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Section#1:Personal Data-Register</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

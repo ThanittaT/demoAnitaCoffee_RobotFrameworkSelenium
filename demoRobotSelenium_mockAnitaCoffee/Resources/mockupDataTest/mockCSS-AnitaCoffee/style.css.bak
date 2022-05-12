@@ -1,0 +1,83 @@
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+/* HEADER HTML
+------------------------------------*/
+header {
+  background: #2f3061;
+  color: #f7fff7;
+}
+
+/* Tag Header all HTML for h2 */
+header h2 {
+  background: #f5b1e6;
+  color: #555a55;
+}
+
+/*--Define by HTML-ID number --*/
+#_regMyHeader {
+  background-color: lightblue;
+  color: #484d48;
+  padding: 5px;
+  text-align: center;
+}
+
+#_reglabel_WELCOME {
+  max-width: 600px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+/* BODY HTML
+------------------------------------*/
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* FOOTER HTML
+------------------------------------*/
+footer {
+  background: #343434;
+  color: #f7fff7;
+  /*text-align: left right; --*/
+}
+
+#_Questionaire{
+	padding: 3px;
+	text-align: cover;
+}
+
+
+/*--Padding guide
+.class or #id {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+table {
+  border-spacing: 30px;
+}
+-----*/
+/* Education
+------------------------------------*/
+/* ._registerForm {
+  background-image: url(../images_AnitaCooffeeShop/cupCakeStraw2.jpeg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+._registerForm p {
+  width: 60%;
+}
+---*/

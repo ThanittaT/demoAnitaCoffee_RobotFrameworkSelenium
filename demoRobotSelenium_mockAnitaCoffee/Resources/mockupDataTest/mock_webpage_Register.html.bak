@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+ 
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register with AnitaCoffee!</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mockCSS-AnitaCoffee/style.css">
+
+        <br>
+                <h4 id="_regMyHeader">mockup_Website for Automation Test- ROBOTFRAMEWORK SeleniumLibrary! @designed by Thanitta T.</h4>
+
+                <div class="_regHeaderGallery">
+                        <h1 id="_reglabel_WELCOME"> Bake with Love Serve with Heart!</h1>
+                      
+                </div>
+        </br>
+
+    </header>
+
+
+
+    <body>
+            <header>
+                <h2>Anita Coffee Shop-Online Member Registration System.</h2>
+            </header>
+
+            <Section>
+                <form class="_registerForm">
+                   
+                    <fieldset>  <!--Blog to grouping data  disply UI-->
+                        <legend>Personal Information:</legend>
+                        
+                        <!--Input#1 Username: type=TEXT-->
+                        <div class="_registerForm" id="1">
+                            <br>
+                                <label>Username: </label>
+                                <input type="text" id="reg_username" size="20">
+                        </div>  
+
+<!--Aim for using v-ATTRIBUTE xpath locator-->                      
+                         <!--Input#2 Password: type=password-->
+                         <div class="_registerForm" id="2">
+                            <br>
+                                <label>Password: </label>
+                                <input type="password" placeholder="8-digits" autofocus="1" 
+                                 v ="reg_Password" size="8">
+    
+                        </div>  
+
+                  
+                        <!--Input#3 Email: Type=EMAIL-->
+                        <br>
+                            <div class="_registerForm" id="3">
+                                <label>Email : </label>
+                                <input type="email" id="reg_Email" placeholder="Example: anita.c@coffeeshop.com" autofocus="1" size="50">
+                            </div><br>
+
+                         <!--Input#4 ContactNumber: Type=TEL-->
+                         <div class="_registerForm" id="4">
+                            <label name="Telephone">Contact Number: </label>
+                            <input type="tel" id="reg_Telephone" name="contactnumber" size="15">
+                        </div> 
+
+ <!--Aim for using CONTAINER-keysword xpath locator due to HTML attribute often change once webpage had refreshed-->
+						<!--Input#5 Name & Last Name: type=TEXT-->
+                        <div class="_registerForm" id="5">
+                            <br><span i ="fName-gSDFsdcsd">
+                                <label>Name: </label>
+                                <input type="text" id="reg_fName" size="50"> 
+                            </span>
+
+                            <span i ="lName-FSDCsdcsd">
+                                <label>Lastname: </label>
+                                <input type="text" id="reg_lName" size="50">
+                            </span>
+                        </div>
+
+                    <!--Input#6 Gender: Type=RADIO-->
+                        <br>
+                            <div class="_registerForm" id="6">
+                                <label >Gender: </label>
+                                    <input type="radio" id="1" name="reg_GenderMale" value="Male">
+                                    <label >Male</label>
+                                    <input type="radio" id="2" name="reg_GenderFemale" value="Female">
+                                    <label >Female</label>
+                                    <input type="radio" id="3" name="reg_GenderNotSpecific" value="NotSpecific">
+                                    <label >Not specific</label>
+                            </div>
+                        <br>
+                    
+                   
+
+                    </fieldset> <!--Blog to grouping data  disply UI-->
+                        
+                    <br>
+
+                    
+                    <fieldset>  <!--Blog to grouping data  disply UI-->
+                        <legend>Address:</legend>
+                  
+                    <!--Input#8 Address detail Type=test-->
+                        <br>
+                            <div class="_registerForm" id="8">
+                                <label for="reg_Address">Adress: </label>
+                                <input type="text" id="reg_Address" name="reg_Address" size="100">
+                            </div>
+                     
+
+                    <!--Input#9 subLocation-dropDwonList subBKK select from default: Type=CHECKBOX-->
+                        <br>
+                            <div class="_registerForm" id="9"> 
+                                <label >City/Town: </label>
+                                    <select id="_subLocation1" name="subLocation">
+                                        <option value="Bangkok">Bangkok</option>
+                                        <option value="BangkokMetropolian(Pathumtani)">Bangkok Metropolian(Pathumtani)</option>
+                                        <option value="BangkokMetropolian(Nonthaburi)">Bangkok Metropolian(Nonthaburi)</option>
+                                        <option value="OutsideBangkok">Outside Bangkok</option>
+                                    </select>
+                            </div>
+                        <br>
+
+                    <!--Input#10 Zipcode: Type=TEXT-->
+                            <div class="_registerForm" id="10">
+                                <label for="reg_Zipcode">Zip Code: </label>
+                                <input type="text" id="reg_Zipcode" size="7">
+                            </div><br>
+
+                    <!--Input#11 Point of Interest: Type=TEXT-->
+                            <div class="_registerForm" id="11">
+                                <label>Point of Interest: </label>
+                                <input type="text" id="reg_PointOfInterest" placeholder="For example: Near Kasikorn Bank-South Sathorn Branch - right corner." autofocus="1"  name="reg_PointOfInterest" size="200" >
+                            </div>
+                        <br>
+
+                    </fieldset> 
+
+                    <section>
+                        <br>
+                                  <!--Input#10 DeliveryLocation-checkbox inside/outside BKK: Type=CHECKBOX-->
+                        <div class="_registerForm" id="12">
+                                <br>
+                                <br>
+                                <label >What is your favorite menu from "Anita Coffee Shop"?</label>
+                                <br>
+                                <br>
+                                <input type="checkbox" id="_tellMenu1" name="reg_FavoriteMenu1" value="Beverage">
+                                <label> Beverage </label><br>
+                                <input type="checkbox" id="_tellMenu2" name="reg_FavoriteMenu2" value="Snack">
+                                <label> Snack </label><br>
+                                <input type="checkbox" id="_tellMenu3" name="reg_FavoriteMenu3" value="Bread">
+                                <label> Bread</label><br>
+                        </div>
+
+<!--Aim for using AND-Operator xpath locator-->
+                        <br>
+                        <div l = "favBev" m = "menu" id="_Questionaire">Please tell us your favorite Beverage menu's name: 
+							<input type="text" placeholder="(Optional#1)" autofocus="1" size="100">
+						</div>
+						
+						 <br>
+                        <div n = "favSnack" m = "menu" id="_Questionaire">Please tell us your favorite Snack menu's name: 
+							<input type="text" placeholder="(Optional#2)" autofocus="1" size="100">
+						</div>
+						
+						 <br>
+                        <div  m = "menu" id="_Questionaire">Please tell us your favorite menu's name: 
+							<input type="text" placeholder="(Optional#3)" autofocus="1" size="100">
+						</div>
+						
+						
+                    </section>
+					
+					
+                    <section>
+                    <!--Input#11 submitButton and alert_msg Type=BUTTON-->
+                        <br>
+                        <br>
+                        <br>
+<!--Aim for using SPAN-Attribute [b='reg_btnSubmit'] xpath locator-->
+                            <div class="_registerForm" id="13">
+                                <span b="reg_btnSubmit">
+                                    <button name="reg_btnSubmit"  type="button" onclick="alert('Success Register! Thank you for joining Anita Coffee Shop!')">
+                                        SUBMIT FORM</button>
+                                </span>
+                            
+                            </div>
+                        <br>
+                        <br>
+                    </section>
+                </form>
+            </Section>
+
+
+    </body>
+
+
+    <!--Section#3 Footer-->
+    <footer>
+        <h1>CONTACT US: </h1>
+        <section class="_ContactFooter"  id="1">
+            <ul>
+                <li>demoTwitter</li>
+                <li>demoOnline Order</li>
+                <li>demoLineOfficial</li>
+
+            </ul>
+            <br>
+        </section>
+
+    </footer>
+
+
+
+    </html>
